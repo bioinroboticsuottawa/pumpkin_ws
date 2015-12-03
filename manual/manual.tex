@@ -138,6 +138,12 @@ The second option is just to build the GUI. To do it, run:
 \texttt{catkin\_make --pkg pumpkin\_messages pumpkin\_qt}
 \end{center}
 
+\subsection{Loading the Arduino code in an Arduino}
+
+This projects uses an Arduino to read the servos status. If it is needed to use a new Arduino, this is a simple step.
+
+Just download the Arduino IDE, open it, load the code \emph{arduinoR.ino}, inside the sketchbook, and flashes it into an Arduino.
+
 \subsection{Last environment settings}
 
 For now, the both systems may run, but we need to configure the network environment to both be able to communicate.
@@ -519,5 +525,25 @@ The documentation is in doc folder. Each package has its own documentation. This
 The documentation is in HTML format, so, to view it, open the \emph{index.html} files. There are links to the indexes in each package to make it easier to find the file and open it.
 
 \paragraph{Note: } To the \texttt{pumpkin\_messages} package, the index page is the \emph{index-msg.html}, to the messages documentation.
+
+\appendix
+
+\section{Version}
+
+The versions of this manual is listed below
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Version} & \textbf{Written By} \\
+			\hline
+			1 & Rafael de Paula Paiva \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Versions of the Manual}
+	\label{tab:manual_version}
+\end{table}
 
 \end{document}
