@@ -1,6 +1,7 @@
 build*/
 devel/
 src/old
+src/cmake-build-debug
 
 #Image files (the images are obtained from .qrc)
 *.png
