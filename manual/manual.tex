@@ -90,7 +90,11 @@ To run the GUI, install the package:
 
 First of all, it is necessary to download the Pumpkin project to the machines. Create a folder in the machine to the project be in.
 
-...
+Then, clone the project from the \emph{Git}. The project can be found on \emph{GitHub} on the respective link:
+
+\begin{center}
+\href{https://github.com/bioinroboticsuottawa/pumpkin\_ws.git}{Pumpkin GitHub Project}
+\end{center}
 
 \paragraph{Atention: } These instructions above is for all machine that will run the Pumpkin system.
 
@@ -134,11 +138,31 @@ The second option is just to build the GUI. To do it, run:
 \texttt{catkin\_make --pkg pumpkin\_messages pumpkin\_qt}
 \end{center}
 
+\subsection{Loading the Arduino code in an Arduino}
+
+This projects uses an Arduino to read the servos status. If it is needed to use a new Arduino, this is a simple step.
+
+Just download the Arduino IDE, open it, load the code \emph{arduinoR.ino}, inside the sketchbook, and flashes it into an Arduino.
+
 \subsection{Last environment settings}
 
 For now, the both systems may run, but we need to configure the network environment to both be able to communicate.
 
-The first thing to do is to be sure that both machines are on the same local network, i. e. they are on the same WiFi network.
+\paragraph{Note: } This document will not cover the basics of networking. But to do this it is demanded that you is able to set up a local network. Keep Calm and this is a simple task.
+
+The first thing to do is to be sure that both machines are on the same local network, i. e. they are on the same WiFi network. A simple way to do so is to turn on a simple WiFi router, and connect both machines to it.
+
+\paragraph{Tip: } Commonly, the router will give to all machines that connect to it a dynamic IP number, this is done via DHCP. It is recommended that you change the IP of both machines to a static number (i.e. that will remain the same even after the machine disconnects and reconnects to it). This is done in each machine. {\color{red}Attention: } give a number outside the DHCP range (check the range in the router).
+
+\paragraph{Tip: }Each machine has its own type of configuring the IP, but on most Ubuntu, on the topbar, click on the network symbol (like a wave signal icon) and on the drop-down menu, click on \emph{Edit connections}. After that, a pop-up will show. Select the network you will work, and click on \emph{Edit}. Select the \emph{IPv4 Settings} tab, and set the number. But don't forget the \emph{subnet mask} and the \emph{default gateway} (the router IP).
+
+After that, it is recommended to name both machines, so they can communicate by the name, instead of recording the IP of them.
+
+After that, the last step is to follow the instructions over configuring ROS Networking. Mainly the \emph{Section 2} of the setup. This is found on the link down:
+
+\begin{center}
+\href{http://wiki.ros.org/ROS/NetworkSetup}{ROS Network Setup}
+\end{center}
 
 \subsection{Running Pumpkin}
 \label{sec:run}
@@ -501,5 +525,25 @@ The documentation is in doc folder. Each package has its own documentation. This
 The documentation is in HTML format, so, to view it, open the \emph{index.html} files. There are links to the indexes in each package to make it easier to find the file and open it.
 
 \paragraph{Note: } To the \texttt{pumpkin\_messages} package, the index page is the \emph{index-msg.html}, to the messages documentation.
+
+\appendix
+
+\section{Version}
+
+The versions of this manual is listed below
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Version} & \textbf{Written By} \\
+			\hline
+			1 & Rafael de Paula Paiva \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Versions of the Manual}
+	\label{tab:manual_version}
+\end{table}
 
 \end{document}

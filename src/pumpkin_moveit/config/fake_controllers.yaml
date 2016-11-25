@@ -19,3 +19,11 @@ controller_list:
     joints:
       - neck_0
       - neck_1
+  - name: fake_base_right_controller
+    joints:
+      - r_shoulder_0
+      - r_shoulder_1
+      - r_shoulder_2
+      - r_elbow
+      - r_wrist_0
+      - r_wrist_1

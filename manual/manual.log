@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.3)  20 NOV 2015 15:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.3)  3 DEC 2015 13:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -536,95 +536,96 @@ l.24 \newpage
               [1]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 47.
- [2] [3] <load_config.png, id=203, 470.75874pt x 207.77625pt>
+ [2] [3] [4]
+<load_config.png, id=222, 470.75874pt x 207.77625pt>
 File: load_config.png Graphic file (type png)
-
-<use load_config.png>
-Package pdftex.def Info: load_config.png used on input line 184.
+ <use load_config.png>
+Package pdftex.def Info: load_config.png used on input line 208.
 (pdftex.def)             Requested size: 333.46758pt x 147.18292pt.
- <main_window.png, id=204, 655.44875pt x 877.2775pt>
+
+<main_window.png, id=223, 655.44875pt x 877.2775pt>
 File: main_window.png Graphic file (type png)
-
-<use main_window.png>
-Package pdftex.def Info: main_window.png used on input line 195.
+ <use main_window.png>
+Package pdftex.def Info: main_window.png used on input line 219.
 (pdftex.def)             Requested size: 333.46758pt x 446.32133pt.
- [4 <./load_config.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 205.
 
+[5 <./load_config.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 229.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
- [5 <./main_window.png>] <playback_tab.png, id=217, 588.1975pt x 224.84pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 229.
+ [6 <./main_window.png>] <playback_tab.png, id=237, 588.1975pt x 224.84pt>
 File: playback_tab.png Graphic file (type png)
- <use playback_tab.png>
-Package pdftex.def Info: playback_tab.png used on input line 220.
+
+<use playback_tab.png>
+Package pdftex.def Info: playback_tab.png used on input line 244.
 (pdftex.def)             Requested size: 333.46758pt x 127.47054pt.
-
-<record_tab.png, id=219, 588.1975pt x 221.82875pt>
+ <record_tab.png, id=239, 588.1975pt x 221.82875pt>
 File: record_tab.png Graphic file (type png)
- <use record_tab.png>
-Package pdftex.def Info: record_tab.png used on input line 235.
-(pdftex.def)             Requested size: 333.46758pt x 125.76334pt.
 
-<scene_tab.png, id=221, 588.1975pt x 221.82875pt>
+<use record_tab.png>
+Package pdftex.def Info: record_tab.png used on input line 259.
+(pdftex.def)             Requested size: 333.46758pt x 125.76334pt.
+ <scene_tab.png, id=241, 588.1975pt x 221.82875pt>
 File: scene_tab.png Graphic file (type png)
- <use scene_tab.png>
-Package pdftex.def Info: scene_tab.png used on input line 252.
+
+<use scene_tab.png>
+Package pdftex.def Info: scene_tab.png used on input line 276.
 (pdftex.def)             Requested size: 333.46758pt x 125.76334pt.
- [6 <./playback_tab.png (PNG copy)> <./record_tab.png (PNG copy)>]
-<manage_files.png, id=230, 518.93875pt x 320.19624pt>
+ [7 <./playback_tab.png (PNG copy)> <./record_tab.png (PNG copy)>] <manage_file
+s.png, id=249, 518.93875pt x 320.19624pt>
 File: manage_files.png Graphic file (type png)
- <use manage_files.png>
-Package pdftex.def Info: manage_files.png used on input line 277.
+
+<use manage_files.png>
+Package pdftex.def Info: manage_files.png used on input line 301.
 (pdftex.def)             Requested size: 333.46758pt x 205.76524pt.
-
-[7 <./scene_tab.png (PNG copy)>] <ssc.png, id=241, 351.3125pt x 803.0pt>
+ [8 <./scene_tab.png (PNG copy)>]
+<ssc.png, id=260, 351.3125pt x 803.0pt>
 File: ssc.png Graphic file (type png)
-
-<use ssc.png>
-Package pdftex.def Info: ssc.png used on input line 312.
+ <use ssc.png>
+Package pdftex.def Info: ssc.png used on input line 336.
 (pdftex.def)             Requested size: 149.28706pt x 341.21968pt.
- [8 <./manage_files.png>] [9 <./ssc.png>]
-<graph1.png, id=255, 1196.47pt x 734.745pt>
+ [9 <./manage_files.png>]
+[10 <./ssc.png>] <graph1.png, id=274, 1196.47pt x 734.745pt>
 File: graph1.png Graphic file (type png)
  <use graph1.png>
-Package pdftex.def Info: graph1.png used on input line 355.
+Package pdftex.def Info: graph1.png used on input line 379.
 (pdftex.def)             Requested size: 333.46758pt x 204.78545pt.
 
-<graph2.png, id=256, 1197.47375pt x 494.84875pt>
+<graph2.png, id=275, 1197.47375pt x 494.84875pt>
 File: graph2.png Graphic file (type png)
  <use graph2.png>
-Package pdftex.def Info: graph2.png used on input line 362.
+Package pdftex.def Info: graph2.png used on input line 386.
 (pdftex.def)             Requested size: 333.46758pt x 137.80162pt.
- [10 <./graph1.png> <./graph2.png>]
-Overfull \hbox (31.52277pt too wide) in paragraph at lines 390--391
+ [11 <./graph1.png> <./graph2.png>]
+Overfull \hbox (31.52277pt too wide) in paragraph at lines 414--415
  []\OT1/cmr/bx/n/10 Note: [] \OT1/cmr/m/n/10 There are an-other folder un-der t
 he \OT1/cmtt/m/n/10 src \OT1/cmr/m/n/10 that was not cov-ered above: the \OT1/c
 mtt/m/n/10 pumpkin[]description\OT1/cmr/m/n/10 .
  []
 
-[11] [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
+[12] [13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
  (./manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 505.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
 Package rerunfilecheck Info: File `manual.out' has not changed.
-(rerunfilecheck)             Checksum: 8F4345747D480153773E7710237C6847;2426.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
+(rerunfilecheck)             Checksum: FE7E04AC27D8812335956F7A2EC5A62D;2558.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 549.
  ) 
 Here is how much of TeX's memory you used:
- 5933 strings out of 495028
- 86904 string characters out of 6181497
- 175170 words of memory out of 5000000
- 9014 multiletter control sequences out of 15000+600000
+ 5944 strings out of 495028
+ 87029 string characters out of 6181497
+ 176215 words of memory out of 5000000
+ 9018 multiletter control sequences out of 15000+600000
  8578 words of font info for 31 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,6n,28p,502b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,28p,502b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
@@ -634,10 +635,10 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt12.pfb>
-Output written on manual.pdf (15 pages, 582598 bytes).
+Output written on manual.pdf (16 pages, 588321 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 334 words of extra memory for PDF output out of 10000 (max. 10000000)
 
