@@ -1,0 +1,8 @@
+<launch>
+    <!-- <include file="$(find pumpkin)/launch/arduino.launch" /> -->
+    <!-- <include file="$(find pumpkin)/launch/mosfet_status_false.launch" /> -->
+
+    <!-- Include ttyUSB.SSC in udev rules -->
+    <arg name="ssc_port" default="/dev/ttyUSB0" />
+    <node name="playback_to_robot" pkg="pumpkin" type="playback_moveit" args="$(arg ssc_port) $(find pumpkin)/config/pumpkin_config_calib-WORKING.yaml $(find pumpkin_description)/robots/pumpkin_description.URDF" />
+</launch>
