@@ -36,9 +36,9 @@ double mapJointStates2pumpkin(YAML::Node servo,
 	double pos = (double) ((positions[positions_i] - in_min)
 			* (out_max - out_min) / (in_max - in_min) + out_min);
 
-//	ROS_INFO("%s", joint->name.c_str());
-//	ROS_INFO("%f %f %f %f %d", in_min, in_max, out_min, out_max, pin);
-//	ROS_INFO("%f", pos);
+	ROS_INFO("%s", joint->name.c_str());
+	ROS_INFO("%f %f %f %f %d", in_min, in_max, out_min, out_max, pin);
+	ROS_INFO("%f", pos);
 	if (pos > out_max)
 		return out_max;
 	if (pos < out_min)
