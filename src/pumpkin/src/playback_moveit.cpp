@@ -22,23 +22,26 @@
 double mapJointStates2pumpkin(YAML::Node servo,
 		boost::shared_ptr<const urdf::Joint>::element_type* joint,
 		std::vector<double> positions, int positions_i) {
-    
-	double in_min = joint->limits->lower;
-	double in_max = joint->limits->upper;
-	double out_min = servo["ssc"]["pulse_min"].as<uint16_t>();
-	double out_max = servo["ssc"]["pulse_max"].as<uint16_t>();
-	int pin = servo["ssc"]["pin"].as<int>();
+//    ROS_INFO("%s", joint->name.c_str());
+    double in_min = joint->limits->lower;
+    double in_max = joint->limits->upper;
+    double out_min = servo["ssc"]["pulse_min"].as<uint16_t>();
+    double out_max = servo["ssc"]["pulse_max"].as<uint16_t>();
+    int pin = servo["ssc"]["pin"].as<int>();
 
-	if (pin > positions.size())
-		return 0;
-	if ((in_max - in_min) == 0)
-		return 0;
+//    ROS_INFO("%f %f %f %f %d", in_min, in_max, out_min, out_max, pin);
+//    if (pin > positions.size()) {
+//        ROS_INFO("positions.size() > %d", positions.size());
+//        return 0;
+//    }
+    if ((in_max - in_min) == 0) {
+        ROS_INFO("(in_max - in_min) == 0 > %d", (in_max - in_min) == 0);
+        return 0;
+    }
 	double pos = (double) ((positions[positions_i] - in_min)
 			* (out_max - out_min) / (in_max - in_min) + out_min);
 
-	ROS_INFO("%s", joint->name.c_str());
-	ROS_INFO("%f %f %f %f %d", in_min, in_max, out_min, out_max, pin);
-	ROS_INFO("%f", pos);
+//	ROS_INFO("%f", pos);
 	if (pos > out_max)
 		return out_max;
 	if (pos < out_min)
@@ -65,8 +68,8 @@ void fakeControllerJointStatesExecutionCallback(const sensor_msgs::JointStateCon
 //	printf("\n");
 
 	ros::Rate loop_rate(ros_rate);
-	serial::Serial ssc(ssc_port, SSC_BAUDRATE,
-			serial::Timeout::simpleTimeout(1000));
+//	serial::Serial ssc(ssc_port, SSC_BAUDRATE,
+//			serial::Timeout::simpleTimeout(1000));
 	for (int p = 0; p < points.size(); p++) {
 		if (!points.empty() && ros::ok()) {
 			std::vector<double> positions = points[p].positions;
@@ -87,7 +90,7 @@ void fakeControllerJointStatesExecutionCallback(const sensor_msgs::JointStateCon
 			stringStream << "\r";
 			ROS_INFO("%s", stringStream.str().c_str());
 
-			ssc.write(stringStream.str()); // Send to ssc
+//			ssc.write(stringStream.str()); // Send to ssc
 			loop_rate.sleep();
 		}
 	}
@@ -96,7 +99,7 @@ void fakeControllerJointStatesExecutionCallback(const sensor_msgs::JointStateCon
 //			"#0 P0 #1 P0 #2 P0 #3 P0 #4 P0 #5 P0 #6 P0 #7 P0 #8 P0 #9 P0 #10 P0 #11 P0 #12 P0 #13 P0 #14 P0 #15 P0\r");
 //	ssc.write(
 //			"#16 P0 #17 P0 #18 P0 #19 P0 #20 P0 #21 P0 #22 P0 #23 P0 #24 P0 #25 P0 #26 P0 #27 P0 #28 P0 #29 P0 #30 P0 #31 P0 #31 P0\r");
-	ssc.close();
+//	ssc.close();
 }
 
 void plannedPathCallback(
