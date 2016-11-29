@@ -13,8 +13,8 @@ left_arm:
     ssc:
       pulse_max: 1800
       pin: 9
-      pulse_rest: 1050
-      pulse_min: 1500
+      pulse_rest: 1500
+      pulse_min: 1050
     arduino:
       analog_read_min: 0
       analog_read_max: 0
