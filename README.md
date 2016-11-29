@@ -12,6 +12,10 @@ There are the following packages:
 * pumpkin_qt: GUI for pumpkin.
 * ~~analog_array: Which implements arduino analog servo reads messages. (moved to pumpkin_messages)~~
 
+>Currently initial script (`pumpkin.sh` loaded when `/etc/init.d/init_pumpkin` run) load only `pumkin_kinect.launch`.
+
+>On the robot `pumpkin.launch` rises an error loading on start-up probably because SSC port (`ttyUSB0`) is not ready yet.
+
 To build:
 
     $ catkin_make
