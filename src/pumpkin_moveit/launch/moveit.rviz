@@ -174,7 +174,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: right_arm
+        Planning Group: left_arm
         Query Goal State: true
         Query Start State: true
         Show Workspace: false
@@ -320,22 +320,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.78688
+      Distance: 3.91537
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.319553
-        Y: 0.0108128
-        Z: -1.3411e-07
+        X: -0.083217
+        Y: 0.0975363
+        Z: 5.81146e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.649797
+      Pitch: 0.629797
       Target Frame: map
       Value: XYOrbit (rviz)
-      Yaw: 1.62178
+      Yaw: 1.70678
     Saved: ~
 Window Geometry:
   Displays:
