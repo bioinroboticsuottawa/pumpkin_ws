@@ -53,10 +53,10 @@ left_arm:
       pin: 10
   wrist_1:
     ssc:
-      pulse_min: 0
+      pulse_min: 700
       pin: 11
-      pulse_max: 0
-      pulse_rest: 0
+      pulse_max: 2100
+      pulse_rest: 1500
     arduino:
       analog_read_min: 0
       analog_read_max: 0
