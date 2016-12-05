@@ -39,3 +39,17 @@ Some configuration files and initialization scripts can be found in the root dir
 To configure your IDE there are some instructions [here](http://wiki.ros.org/IDEs). After some tests we now use [Clion](https://www.jetbrains.com/clion/).
 
 Documentation and manual can be found under `doc/` and `manual/` folders, respectively.
+
+Udev Rules
+----------
+
+We defined udev rules to get easy-to-remember and constant symlinks to tty ports.
+Tutorial on how to define udev rules for arduino boards [here](http://vncprado.github.io/udev-rules-for-ttyusb/)
+Create file:
+
+    sudo nano /etc/udev/rules.d/99-usb-serial.rules
+    
+and fill with the rules. Example:
+
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="2337390", SYMLINK+="ttyUSB.ada"
+    SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="2337330", SYMLINK+="ttyUSB.dextrus"
