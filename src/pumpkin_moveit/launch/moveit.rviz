@@ -5,10 +5,13 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
-        - /MotionPlanning1/Scene Robot1
         - /MotionPlanning1/Planning Request1
       Splitter Ratio: 0.74256
+<<<<<<< HEAD
     Tree Height: 304
+=======
+    Tree Height: 352
+>>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -174,9 +177,13 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
+<<<<<<< HEAD
         Planning Group: right_arm
+=======
+        Planning Group: left_shoulder_to_wrist
+>>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
         Query Goal State: true
-        Query Start State: true
+        Query Start State: false
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
@@ -289,22 +296,8 @@ Visualization Manager:
             Value: true
         Robot Alpha: 0.5
         Show Robot Collision: false
-        Show Robot Visual: false
+        Show Robot Visual: true
       Value: true
-    - Class: rviz/TF
-      Enabled: false
-      Frame Timeout: 15
-      Frames:
-        All Enabled: true
-      Marker Scale: 1
-      Name: TF
-      Show Arrows: true
-      Show Axes: true
-      Show Names: true
-      Tree:
-        {}
-      Update Interval: 0
-      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -320,22 +313,33 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
+<<<<<<< HEAD
       Distance: 3.72839
+=======
+      Distance: 3.49586
+>>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.551992
-        Y: -0.352363
+        X: -0.270457
+        Y: 0.360948
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
+<<<<<<< HEAD
       Pitch: 0.154798
       Target Frame: map
       Value: XYOrbit (rviz)
       Yaw: 1.27678
+=======
+      Pitch: 0.579797
+      Target Frame: map
+      Value: XYOrbit (rviz)
+      Yaw: 1.50176
+>>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
     Saved: ~
 Window Geometry:
   Displays:
@@ -347,7 +351,11 @@ Window Geometry:
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
+<<<<<<< HEAD
   QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003a2fc0200000005fb000000100044006900730070006c0061007900730100000028000001c5000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f3000001d7000001cc00ffffff00000208000003a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+=======
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a200000398fc0200000005fb000000100044006900730070006c0061007900730100000036000001f1000000b700fffffffb0000000800480065006c00700000000342000000bb0000006500fffffffb0000000a0056006900650077007300000003b0000000b00000009b00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000022d000001a10000019600ffffff000002580000039800000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+>>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
   Views:
     collapsed: false
   Width: 1215
