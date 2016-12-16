@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
 	positionTransform.data.resize(3); // (x,y,z)
     
     	//Publishers
-    	ros::Publisher position_transform_pub = nh.advertise<std_msgs::Float32MultiArray>("/position_transform", 32); // Publish the position transform from shoulder to hand
+    	ros::Publisher position_transform_pub = nh.advertise<std_msgs::Float32MultiArray>("/right_shoulder_to_wrist", 32); // Publish the position transform from shoulder to hand
 	ros::Publisher marker_right_shoulder_pub = nh.advertise<visualization_msgs::Marker>("visualization_marker_right_shoulder", 1);
 	ros::Publisher marker_right_hand_pub = nh.advertise<visualization_msgs::Marker>("visualization_marker_right_hand", 1);
 	ros::Publisher marker_transform_pub = nh.advertise<visualization_msgs::Marker>("visualization_marker_transform", 1);
@@ -113,8 +113,8 @@ int main(int argc, char** argv) {
 	marker_transform.pose.position.z = transform.getOrigin().z();
 
 	ROS_INFO("x = %f",marker_transform.pose.position.x);
-	ROS_INFO("y = %f",marker_transform.pose.position.x);	
-	ROS_INFO("z = %f",marker_transform.pose.position.x);	
+	ROS_INFO("y = %f",marker_transform.pose.position.y);	
+	ROS_INFO("z = %f",marker_transform.pose.position.z);	
 	
 	position_transform_pub.publish(positionTransform);
 
