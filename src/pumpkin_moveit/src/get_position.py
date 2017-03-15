@@ -14,7 +14,7 @@ if __name__ == '__main__':
 	print "--- Straight line gesture ---"
 	rospy.init_node('straight_line', anonymous=True)
 	right_arm = MoveGroupCommander("right_arm")
-
+	"""
 	start_pose = geometry_msgs.msg.Pose()
         start_pose.position.x = -0.0206330384032
     	start_pose.position.y = 0.077582282778
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     	end_pose.orientation.y = 0.5
     	end_pose.orientation.z = 0.5
     	end_pose.orientation.w = 0.5
-
+	
 	right_arm.set_pose_target(end_pose)	
 	plan_end = right_arm.plan()
    	print "Plan end"
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     	rospy.sleep(5)
 
 	#rospy.sleep(1)	
-	
+	"""
 	current_pose = geometry_msgs.msg.Pose()
 	current_pose = right_arm.get_current_pose()
 	

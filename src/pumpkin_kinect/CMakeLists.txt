@@ -11,6 +11,10 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   openni_tracker
   visualization_msgs
+  moveit_ros_move_group
+  moveit_planners_ompl
+  moveit_ros_visualization
+  #robot_state
 )
 
 ## System dependencies are found with CMake's conventions
@@ -133,17 +137,22 @@ include_directories(
 ## Declare a C++ executable
 add_executable(hand_shoulder_tf_listener src/hand_shoulder_tf_listener.cpp)
 add_executable(test_positions src/test_positions.cpp)
+add_executable(mimic src/mimic.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(hand_shoulder_tf_listener ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(test_positions ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(mimic ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(hand_shoulder_tf_listener
   ${catkin_LIBRARIES}
 )
 target_link_libraries(test_positions
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(mimic
   ${catkin_LIBRARIES}
 )
 

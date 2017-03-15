@@ -1,27 +1,125 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 84
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
         - /MotionPlanning1
         - /MotionPlanning1/Planning Request1
-      Splitter Ratio: 0.74256
-<<<<<<< HEAD
-    Tree Height: 304
-=======
-    Tree Height: 352
->>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
-  - Class: rviz/Help
-    Name: Help
-  - Class: rviz/Views
-    Expanded:
-      - /Current View1
-    Name: Views
-    Splitter Ratio: 0.5
+      Splitter Ratio: 0.5
+    Tree Height: 358
 Visualization Manager:
   Class: ""
   Displays:
+    - Attached Body Color: 150; 50; 150
+      Class: moveit_rviz_plugin/RobotState
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chest_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_shoulder1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_shoulder2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_upperarm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_wrist0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        l_wrist1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        map:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        neck1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        neck2_Link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_forerarm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_shoulder1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_shoulder2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_upperarm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_wrist0_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        r_wrist1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotState
+      Robot Alpha: 1
+      Robot Description: robot_description
+      Robot State Topic: display_robot_state
+      Show All Links: true
+      Show Highlights: true
+      Value: true
+      Visual Enabled: true
     - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
@@ -157,13 +255,13 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
         Show Robot Collision: false
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
-        Trajectory Topic: move_group/display_planned_path
+        Trajectory Topic: /move_group/display_planned_path
       Planning Metrics:
         Payload: 1
         Show Joint Torques: false
@@ -177,20 +275,16 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-<<<<<<< HEAD
-        Planning Group: right_arm
-=======
-        Planning Group: left_shoulder_to_wrist
->>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
+        Planning Group: right_shoulder_to_wrist
         Query Goal State: true
-        Query Start State: false
+        Query Start State: true
         Show Workspace: false
         Start State Alpha: 1
         Start State Color: 0; 255; 0
-      Planning Scene Topic: move_group/monitored_planning_scene
+      Planning Scene Topic: /planning_scene
       Robot Description: robot_description
       Scene Geometry:
-        Scene Alpha: 1
+        Scene Alpha: 0.9
         Scene Color: 50; 230; 50
         Scene Display Time: 0.2
         Show Scene Geometry: true
@@ -294,7 +388,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Robot Alpha: 0.5
+        Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
       Value: true
@@ -305,59 +399,44 @@ Visualization Manager:
     Frame Rate: 30
   Name: root
   Tools:
+    - Class: rviz/MoveCamera
     - Class: rviz/Interact
       Hide Inactive Objects: true
-    - Class: rviz/MoveCamera
     - Class: rviz/Select
+    - Class: rviz/SetInitialPose
+      Topic: initialpose
+    - Class: rviz/SetGoal
+      Topic: goal
   Value: true
   Views:
     Current:
-      Class: rviz/XYOrbit
-<<<<<<< HEAD
-      Distance: 3.72839
-=======
-      Distance: 3.49586
->>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
+      Class: rviz/Orbit
+      Distance: 5.12643
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.270457
-        Y: 0.360948
-        Z: 2.23518e-07
+        X: 0
+        Y: 0
+        Z: 0
       Name: Current View
       Near Clip Distance: 0.01
-<<<<<<< HEAD
-      Pitch: 0.154798
-      Target Frame: map
-      Value: XYOrbit (rviz)
-      Yaw: 1.27678
-=======
-      Pitch: 0.579797
-      Target Frame: map
-      Value: XYOrbit (rviz)
-      Yaw: 1.50176
->>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
+      Pitch: 0.580398
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 1.2954
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
   Height: 1000
-  Help:
-    collapsed: false
   Hide Left Dock: false
   Hide Right Dock: false
   Motion Planning:
     collapsed: false
-<<<<<<< HEAD
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003a2fc0200000005fb000000100044006900730070006c0061007900730100000028000001c5000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f3000001d7000001cc00ffffff00000208000003a200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
-=======
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a200000398fc0200000005fb000000100044006900730070006c0061007900730100000036000001f1000000b700fffffffb0000000800480065006c00700000000342000000bb0000006500fffffffb0000000a0056006900650077007300000003b0000000b00000009b00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e0067010000022d000001a10000019600ffffff000002580000039800000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
->>>>>>> 25afe2111b34a2933c208d9d6578230e977f9872
-  Views:
-    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b1000003a2fc0200000002fb000000100044006900730070006c0061007900730100000028000001a7000000dd00fffffffb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001d5000001f5000001cc00ffffff00000208000003a200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Width: 1215
-  X: 1345
+  X: 65
   Y: 24
