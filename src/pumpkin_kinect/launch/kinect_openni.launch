@@ -1,0 +1,6 @@
+<launch>
+  <!-- TODO FOR SOME REASON CANT RUN OPENNI LAUNCH AND TRACKER AT THIS SAME LAUNCH -->
+  <rosparam param="/openni_tracker/camera_frame_id">camera_link</rosparam>
+  <include file="$(find openni_launch)/launch/openni.launch" />
+  <!-- node name="my_node1" pkg="openni_tracker" type="openni_tracker" output="screen" ns="foo" /-->
+</launch>
