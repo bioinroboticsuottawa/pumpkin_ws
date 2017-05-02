@@ -53,3 +53,8 @@ and fill with the rules. Example:
 
     SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="2337390", SYMLINK+="ttyUSB.ada"
     SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="2337330", SYMLINK+="ttyUSB.dextrus"
+    
+TinyXML problem:
+
+Modifying /opr/ros/indigo/include/pluginlib/class_loader.h, including "#define TIXML_USE_STL" just before #include "tinyxml.h" solves the problem.
+[source](http://answers.ros.org/question/206042/vrep_ros_bridge-installation-problem/)
